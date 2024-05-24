@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Min Max Numbers from Array List</title>
+</head>
+<body>
+    <script>
+        let array = [45,67,8,9,0,24];
+        let minEle= Math.min(...array)
+        let  maxEle = Math.max(...array)
+         let minElement ;
+         let maxElement ;
+
+        for(let i=0 ; i<array.length; i++){
+            if(minElement===undefined||array[i]< minElement){
+                minElement =array[i]
+            }
+            if(maxElement===undefined|| array[i]>maxElement){
+                maxElement = array[i]
+            }
+        }
+
+        console.log(minElement, minEle)
+        console.log(maxElement, maxEle)
+    </script>
+</body>
+</html>
